@@ -10,8 +10,8 @@ defmodule LiveviewappWeb.FooLive do
 
   def render(assigns) do
 	~L"""
+	<div id="test" phx-keydown="keydown" tabindex="0">
 	<h1>Hello</h1>
-	<div phx-keydown="keydown" phx-target="window">
 	<%= @msg %>
 	</div>  	
 	"""
